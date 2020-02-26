@@ -397,12 +397,13 @@ function addPseudoElements(node, nodePath, allElements) {
 					if (style[attributeName]) {
 						if (
 							!Object.keys(defaultPseudoElementValues).includes(attributeName) 
-							&& parentStyle[attributeName] != style[attributeName]
 							|| 
 							Object.keys(defaultPseudoElementValues).includes(attributeName) 
 							&& !defaultPseudoElementValues[attributeName].includes(style[attributeName])
 							) {
-							extractedAttributes[attributeName] = style[attributeName];
+							if (parentStyle[attributeName] != style[attributeName]) {
+								extractedAttributes[attributeName] = style[attributeName];
+							}
 						}
 					}
 				}
