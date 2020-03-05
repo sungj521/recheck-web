@@ -7,14 +7,14 @@
 					<attribute key="absolute-outline" xsi:type="outlineAttribute">
 						<x>0</x>
 						<y>0</y>
-						<height>184</height>
-						<width>1200</width>
+						<height>185</height>
+						<width>1366</width>
 					</attribute>
 					<attribute key="outline" xsi:type="outlineAttribute">
 						<x>0</x>
 						<y>0</y>
-						<height>184</height>
-						<width>1200</width>
+						<height>185</height>
+						<width>1366</width>
 					</attribute>
 					<attribute key="path" xsi:type="pathAttribute">html[1]</attribute>
 					<attribute key="suffix" xsi:type="suffixAttribute">1</attribute>
@@ -24,8 +24,20 @@
 			<attributes>
 				<attributes>
 					<entry>
+						<key>border-image-outset</key>
+						<value xsi:type="xsd:string">0</value>
+					</entry>
+					<entry>
+						<key>font-family</key>
+						<value xsi:type="xsd:string">serif</value>
+					</entry>
+					<entry>
 						<key>shown</key>
 						<value xsi:type="xsd:string">true</value>
+					</entry>
+					<entry>
+						<key>unicode-bidi</key>
+						<value xsi:type="xsd:string">isolate</value>
 					</entry>
 				</attributes>
 			</attributes>
@@ -35,8 +47,8 @@
 						<attribute key="absolute-outline" xsi:type="outlineAttribute">
 							<x>8</x>
 							<y>16</y>
-							<height>152</height>
-							<width>1184</width>
+							<height>153</height>
+							<width>1350</width>
 						</attribute>
 						<attribute key="outline" xsi:type="outlineAttribute">
 							<x>8</x>
@@ -62,15 +74,15 @@
 						<attributes>
 							<attribute key="absolute-outline" xsi:type="outlineAttribute">
 								<x>8</x>
-								<y>184</y>
+								<y>185</y>
 								<height>0</height>
-								<width>1184</width>
+								<width>1350</width>
 							</attribute>
 							<attribute key="id" xsi:type="stringAttribute">divID</attribute>
 							<attribute key="outline" xsi:type="outlineAttribute">
 								<x>0</x>
-								<y>168</y>
-								<height>-152</height>
+								<y>169</y>
+								<height>-153</height>
 								<width>0</width>
 							</attribute>
 							<attribute key="path" xsi:type="pathAttribute">html[1]/body[1]/div[1]</attribute>
@@ -93,8 +105,8 @@
 							<attribute key="absolute-outline" xsi:type="outlineAttribute">
 								<x>8</x>
 								<y>73</y>
-								<height>37</height>
-								<width>1184</width>
+								<height>38</height>
+								<width>1350</width>
 							</attribute>
 							<attribute key="outline" xsi:type="outlineAttribute">
 								<x>0</x>
@@ -141,6 +153,14 @@
 							<entry>
 								<key>column-rule-color</key>
 								<value xsi:type="xsd:string">rgb(0, 128, 0)</value>
+							</entry>
+							<entry>
+								<key>margin-bottom</key>
+								<value xsi:type="xsd:string">21.4333px</value>
+							</entry>
+							<entry>
+								<key>margin-top</key>
+								<value xsi:type="xsd:string">21.4333px</value>
 							</entry>
 							<entry>
 								<key>outline-color</key>
@@ -284,14 +304,14 @@
 						<attributes>
 							<attribute key="absolute-outline" xsi:type="outlineAttribute">
 								<x>8</x>
-								<y>132</y>
+								<y>133</y>
 								<height>36</height>
-								<width>1184</width>
+								<width>1350</width>
 							</attribute>
 							<attribute key="outline" xsi:type="outlineAttribute">
 								<x>0</x>
-								<y>116</y>
-								<height>-116</height>
+								<y>117</y>
+								<height>-117</height>
 								<width>0</width>
 							</attribute>
 							<attribute key="path" xsi:type="pathAttribute">html[1]/body[1]/ul[1]</attribute>
@@ -301,6 +321,10 @@
 					</identifyingAttributes>
 					<attributes>
 						<attributes>
+							<entry>
+								<key>counter-reset</key>
+								<value xsi:type="xsd:string">list-item 0</value>
+							</entry>
 							<entry>
 								<key>margin-bottom</key>
 								<value xsi:type="xsd:string">16px</value>
@@ -320,9 +344,9 @@
 							<attributes>
 								<attribute key="absolute-outline" xsi:type="outlineAttribute">
 									<x>48</x>
-									<y>132</y>
+									<y>133</y>
 									<height>18</height>
-									<width>1144</width>
+									<width>1310</width>
 								</attribute>
 								<attribute key="outline" xsi:type="outlineAttribute">
 									<x>40</x>
@@ -354,9 +378,9 @@
 							<attributes>
 								<attribute key="absolute-outline" xsi:type="outlineAttribute">
 									<x>48</x>
-									<y>150</y>
+									<y>151</y>
 									<height>18</height>
-									<width>1144</width>
+									<width>1310</width>
 								</attribute>
 								<attribute key="outline" xsi:type="outlineAttribute">
 									<x>40</x>
@@ -391,12 +415,12 @@
 								<x>8</x>
 								<y>16</y>
 								<height>36</height>
-								<width>1184</width>
+								<width>1350</width>
 							</attribute>
 							<attribute key="outline" xsi:type="outlineAttribute">
 								<x>0</x>
 								<y>0</y>
-								<height>-116</height>
+								<height>-117</height>
 								<width>0</width>
 							</attribute>
 							<attribute key="path" xsi:type="pathAttribute">html[1]/body[1]/p[1]</attribute>
@@ -525,7 +549,7 @@
 		<metadata>
 			<entry>
 				<key>driver.type</key>
-				<value>ChromeDriver</value>
+				<value>FirefoxDriver</value>
 			</entry>
 			<entry>
 				<key>time.offset</key>
@@ -541,11 +565,11 @@
 			</entry>
 			<entry>
 				<key>vcs.commit</key>
-				<value>1b6b464bb4e459a6da6e746c234173a4b7bf97a4</value>
+				<value>b507b52f8cf28ce41e38fde5a92708c1d4b91702</value>
 			</entry>
 			<entry>
 				<key>window.height</key>
-				<value>800</value>
+				<value>768</value>
 			</entry>
 			<entry>
 				<key>vcs.branch</key>
@@ -565,15 +589,15 @@
 			</entry>
 			<entry>
 				<key>browser.name</key>
-				<value>chrome</value>
+				<value>firefox</value>
 			</entry>
 			<entry>
 				<key>browser.version</key>
-				<value>80.0.3987.122</value>
+				<value>73.0.1</value>
 			</entry>
 			<entry>
 				<key>time.time</key>
-				<value>21:45:11.9491156</value>
+				<value>21:58:55.1390775</value>
 			</entry>
 			<entry>
 				<key>time.zone</key>
@@ -581,7 +605,7 @@
 			</entry>
 			<entry>
 				<key>window.width</key>
-				<value>1200</value>
+				<value>1366</value>
 			</entry>
 			<entry>
 				<key>os.name</key>
