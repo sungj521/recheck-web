@@ -163,6 +163,7 @@ public class RecheckSeleniumAdapter implements RecheckAdapter {
 		@SuppressWarnings( "unchecked" )
 		final Map<String, Map<String, Object>> tagMapping =
 				(Map<String, Map<String, Object>>) jsExecutor.executeScript( getQueryJS(), webElement );
+		debug( tagMapping );
 		final RootElement lastChecked = convert( tagMapping, driver.getCurrentUrl(), driver.getTitle(), screenshot );
 
 		final FrameConverter frameConverter = new FrameConverter( getQueryJS(), retestIdProvider, defaultValueFinder );
@@ -175,6 +176,11 @@ public class RecheckSeleniumAdapter implements RecheckAdapter {
 		}
 
 		return Collections.singleton( lastChecked );
+	}
+
+	private void debug( final Map<String, Map<String, Object>> tagMapping ) {
+		tagMapping.entrySet().stream().filter( entry -> entry.getKey().contains( "pseudo" ) )
+				.forEach( entry -> logger.warn( "{} | {}", entry.getKey(), entry.getValue() ) );
 	}
 
 	public RootElement convert( final Map<String, Map<String, Object>> tagMapping, final String url, final String title,
